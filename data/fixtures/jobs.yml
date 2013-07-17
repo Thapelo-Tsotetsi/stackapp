@@ -1,0 +1,611 @@
+StackappJob:
+  job_sensio_labs:
+    StackappCategory: bursary
+    type:         full-time
+    company:      South Africa
+    logo:         sensio-labs.gif
+    url:          http://www.test.com/
+    position:     Web Developer
+    location:     South, Africa
+    description:  |
+      You've already developed websites with symfony and you want to work
+      with Open-Source technologies. You have a minimum of 3 years
+      experience in web development with PHP or Java and you wish to
+      participate to development of Web 2.0 sites using the best
+      frameworks available.
+    requirements_one:  |
+      you want to work
+      with Open-Source technologies. you want to work 
+      with Open-Source technologies
+    requirements_two:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    requirements_three:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_sensio_labs
+    email:        job@example.com
+    expires_at:   '2013-10-10'
+
+  job_sensio_labsusdf3:
+    StackappCategory: bursary
+    type:         full-time
+    company:      South Africa
+    logo:         sensio-labs.gif
+    url:          http://www.test.com/
+    position:     Web Developer
+    location:     South, Africa
+    description:  |
+      You've already developed websites with symfony and you want to work
+      with Open-Source technologies. You have a minimum of 3 years
+      experience in web development with PHP or Java and you wish to
+      participate to development of Web 2.0 sites using the best
+      frameworks available.
+    requirements_one:  |
+      you want to work
+      with Open-Source technologies. you want to work 
+      with Open-Source technologies
+    requirements_two:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    requirements_three:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_sensio_labsuhire
+    email:        job@example.com
+    expires_at:   '2013-10-10'
+
+  job_sensio_labs89k:
+    StackappCategory: bursary
+    type:         full-time
+    company:      South Africa
+    logo:         sensio-labs.gif
+    url:          http://www.test.com/
+    position:     Web Developer
+    location:     South, Africa
+    description:  |
+      You've already developed websites with symfony and you want to work
+      with Open-Source technologies. You have a minimum of 3 years
+      experience in web development with PHP or Java and you wish to
+      participate to development of Web 2.0 sites using the best
+      frameworks available.
+    requirements_one:  |
+      you want to work
+      with Open-Source technologies. you want to work 
+      with Open-Source technologies
+    requirements_two:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    requirements_three:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_sensio_labs09df
+    email:        job@example.com
+    expires_at:   '2013-10-10'
+
+
+  job_sensio_labsrtyf:
+    StackappCategory: bursary
+    type:         full-time
+    company:      Free State
+    url:          http://www.sensiolabs.com/
+    position:     Web Developer
+    location:     South, Africa
+    description:  |
+      You've already developed websites with symfony and you want to work
+      with Open-Source technologies. You have a minimum of 3 years
+      experience in web development with PHP or Java and you wish to
+      participate to development of Web 2.0 sites using the best
+      frameworks available.
+    requirements_one:  |
+      you want to work
+      with Open-Source technologies. you want to work 
+      with Open-Source technologies
+    requirements_two:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    requirements_three:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com      
+    is_public:    true
+    is_activated: true
+    token:        job_sensio_labsv2p
+    email:        job@example.com
+    expires_at:   '2013-10-10'
+
+  job_extreme_sensio:
+    StackappCategory:  learnership
+    type:         part-time
+    company:      Extreme Sensio
+    url:          http://www.extreme-sensio.com/
+    position:     Web Designer
+    location:     South, Africa
+    description:  |
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+      enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in.
+      Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa
+      qui officia deserunt mollit anim id est laborum.
+    requirements_one:  |
+      you want to work
+      with Open-Source technologies. you want to work 
+      with Open-Source technologies
+    requirements_two:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    requirements_three:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_extreme_sensio
+    email:        job@example.com
+    expires_at:   '2013-10-10'
+
+  job_extreme_sensio2:
+    StackappCategory:  learnership
+    type:         part-time
+    company:      Extreme Sensio2
+    url:          http://www.extreme-sensio.com/
+    position:     Web Designer
+    location:     South, Africa2
+    description:  |
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+      enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in.
+      Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa
+      qui officia deserunt mollit anim id est laborum.
+    requirements_one:  |
+      you want to work
+      with Open-Source technologies. you want to work 
+      with Open-Source technologies
+    requirements_two:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    requirements_three:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com  
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_extreme_sensio2
+    email:        job@example.com
+    expires_at:   '2013-10-10'
+
+  job_extreme_sensio22:
+    StackappCategory:  learnership
+    type:         part-time
+    company:      Extreme Sensio2
+    url:          http://www.extreme-sensio.com/
+    position:     Web Designer
+    location:     South, Africa2
+    description:  |
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+      enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in.
+      Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa
+      qui officia deserunt mollit anim id est laborum.
+    requirements_one:  |
+      you want to work
+      with Open-Source technologies. you want to work 
+      with Open-Source technologies
+    requirements_two:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    requirements_three:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com  
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_extreme_sensio22
+    email:        job@example.com
+    expires_at:   '2013-10-10'
+
+  job_extreme_sensio221:
+    StackappCategory:  startup_jobs
+    type:         part-time
+    company:      Extreme Sensio2
+    url:          http://www.extreme-sensio.com/
+    position:     Web Designer
+    location:     South, Africa2
+    description:  |
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+      enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in.
+      Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa
+      qui officia deserunt mollit anim id est laborum.
+    requirements_one:  |
+      you want to work
+      with Open-Source technologies. you want to work 
+      with Open-Source technologies
+    requirements_two:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    requirements_three:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com  
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_extreme_sensio221
+    email:        job@example.com
+    expires_at:   '2013-10-10'
+
+  job_extreme_sensio222:
+    StackappCategory:  startup_jobs
+    type:         part-time
+    company:      Extreme Sensio2
+    url:          http://www.extreme-sensio.com/
+    position:     Web Designer
+    location:     South, Africa2
+    description:  |
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+      enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in.
+      Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa
+      qui officia deserunt mollit anim id est laborum.
+    requirements_one:  |
+      you want to work
+      with Open-Source technologies. you want to work 
+      with Open-Source technologies
+    requirements_two:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    requirements_three:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com  
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_extreme_sensio222
+    email:        job@example.com
+    expires_at:   '2013-10-10'
+
+  job_extreme_sensio22243:
+    StackappCategory:  startup_jobs
+    type:         part-time
+    company:      Extreme Sensio2
+    url:          http://www.extreme-sensio.com/
+    position:     Web Designer
+    location:     South, Africa2
+    description:  |
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+      enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in.
+      Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa
+      qui officia deserunt mollit anim id est laborum.
+    requirements_one:  |
+      you want to work
+      with Open-Source technologies. you want to work 
+      with Open-Source technologies
+    requirements_two:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    requirements_three:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com  
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_extreme_sensio22243
+    email:        job@example.com
+    expires_at:   '2013-10-10'
+
+  job_extreme_sensio222fdf:
+    StackappCategory:  startup_jobs
+    type:         part-time
+    company:      Extreme Sensio2
+    url:          http://www.extreme-sensio.com/
+    position:     Web Designer
+    location:     South, Africa2
+    description:  |
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+      enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in.
+      Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa
+      qui officia deserunt mollit anim id est laborum.
+    requirements_one:  |
+      you want to work
+      with Open-Source technologies. you want to work 
+      with Open-Source technologies
+    requirements_two:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    requirements_three:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com  
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_extreme_sensio2224f
+    email:        job@example.com
+    expires_at:   '2013-10-10'
+
+
+<?php for ($i = 80; $i <= 110; $i++): ?>
+  job_<?php echo $i ?>:
+    StackappCategory: internship
+    company:      Company <?php echo $i."\n" ?>
+    position:     Web Developer
+    location:     South, Africa
+    description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    requirements_one:  |
+      you want to work
+      test tetsetse set set set s
+    requirements_two:  |
+      you want to work
+      test test fs df sdfsd f dfsd
+    requirements_three:  |
+      you want to work
+      test t set est etset
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    how_to_apply: |
+      Send your resume to lorem.ipsum [at] company_<?php echo $i ?>.sit
+    is_public:    true
+    is_activated: true
+    token:        job_<?php echo $i."\n" ?>
+    email:        job@example.com
+
+  job_extreme_sensio23:
+    StackappCategory:  learnership
+    type:         part-time
+    company:      Extreme Sensio2
+    url:          http://www.extreme-sensio.com/
+    position:     Web Designer
+    location:     South, Africa2
+    description:  |
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+      enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in.
+      Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa
+      qui officia deserunt mollit anim id est laborum.
+    requirements_one:  |
+      you want to work
+      with Open-Source technologies. you want to work 
+      with Open-Source technologies
+    requirements_two:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    requirements_three:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com  
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_extreme_sensio23
+    email:        job@example.com
+    expires_at:   '2013-10-10'
+
+<?php endfor ?>
+
+  job_extreme_sensio223:
+    StackappCategory:  internship
+    type:         part-time
+    company:      Extreme Sensio2
+    url:          http://www.extreme-sensio.com/
+    position:     Web Designer
+    location:     South, Africa2
+    description:  |
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+      enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in.
+      Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa
+      qui officia deserunt mollit anim id est laborum.
+    requirements_one:  |
+      you want to work
+      with Open-Source technologies. you want to work 
+      with Open-Source technologies
+    requirements_two:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    requirements_three:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com  
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_extreme_sensio223
+    email:        job@example.com
+    expires_at:   '2013-10-10'
+
+  job_extreme_sensio223d:
+    StackappCategory:  internship
+    type:         part-time
+    company:      Extreme Sensio2
+    url:          http://www.extreme-sensio.com/
+    position:     Web Designer
+    location:     South, Africa2
+    description:  |
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+      enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in.
+      Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa
+      qui officia deserunt mollit anim id est laborum.
+    requirements_one:  |
+      you want to work
+      with Open-Source technologies. you want to work 
+      with Open-Source technologies
+    requirements_two:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    requirements_three:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com  
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_extreme_sensio224
+    email:        job@example.com
+    expires_at:   '2013-10-10'
+
+
+  job_extreme_sensio22346:
+    StackappCategory:  internship
+    type:         part-time
+    company:      Extreme Sensio2
+    url:          http://www.extreme-sensio.com/
+    position:     Web Designer
+    location:     South, Africa2
+    description:  |
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+      enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+      in reprehenderit in.
+      Voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa
+      qui officia deserunt mollit anim id est laborum.
+    requirements_one:  |
+      you want to work
+      with Open-Source technologies. you want to work 
+      with Open-Source technologies
+    requirements_two:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    requirements_three:  |
+      you want to work
+      with Open-Source technologies. you want to work
+      with Open-Source technologies
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com  
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    is_public:    true
+    is_activated: true
+    token:        job_extreme_sensio2235y
+    email:        job@example.com
+    expires_at:   '2013-10-10'
+
+
+<?php for ($i = 80; $i <= 110; $i++): ?>
+  job_<?php echo $i ?>:
+    StackappCategory: bursary
+    company:      Company <?php echo $i."\n" ?>
+    position:     Web DeveloperB
+    location:     South, Africa
+    description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    requirements_one:  |
+      you want to work
+      test tetsetse set set set s
+    requirements_two:  |
+      you want to work
+      test test fs df sdfsd f dfsd
+    requirements_three:  |
+      you want to work
+      test t set est etset
+    how_to_apply: |
+      Send your resume to fabien.potencier [at] sensio.com
+    how_to_apply: |
+      Send your resume to lorem.ipsum [at] company_<?php echo $i ?>.sit
+    is_public:    true
+    is_activated: true
+    token:        job_<?php echo $i."\n" ?>
+    email:        job@example.com
+    expires_at:   '2013-10-10'
+
+ 
+<?php endfor ?>
