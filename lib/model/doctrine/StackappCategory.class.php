@@ -5,5 +5,13 @@
  */
 class StackappCategory extends BaseStackappCategory
 {
-
+	public function getActiveJobs($max = 10)
+	{
+	  $q = Doctrine_Query::create()
+	    ->from('StackappJob j')
+	    ->where('j.category_id = ?', $this->getId())
+	    ->limit($max);
+	 
+	  return Doctrine::getTable('StackappJob')->getActiveJobs($q);
+	}
 }

@@ -5,5 +5,30 @@
  */
 class StackappJob extends BaseStackappJob
 {
+	public function getCompanySlug()
+	{
+	  return Stackapp::slugify($this->getCompany());
+	}
+	 
+	public function getPositionSlug()
+	{
+	  return Stackapp::slugify($this->getPosition());
+	}
+	 
+	public function getLocationSlug()
+	{
+	  return Stackapp::slugify($this->getLocation());
+	}
+
+	public function save(Doctrine_Connection $conn = null)
+	{
+	  if ($this->isNew() && !$this->getExpiresAt())
+	  {
+	    $now = $this->getCreatedAt() ? strtotime($this->getCreatedAt()) : time();
+	    $this->setExpiresAt(date('Y-m-d H:i:s', $now + 86400 * sfConfig::get('app_active_days')));
+	  }
+	 
+	  return parent::save($conn);
+	}
 
 }

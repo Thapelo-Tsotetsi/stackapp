@@ -5,22 +5,19 @@
  *
  * @package    stackapp
  * @subpackage job
- * @author     Your name here
+ * @author     Thapelo Tsotetsi
  * @version    SVN: $Id: actions.class.php 12474 2008-10-31 10:41:27Z fabien $
  */
 class jobActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-    $this->stackapp_job_list = Doctrine::getTable('StackappJob')
-      ->createQuery('a')
-      ->execute();
+    $this->categories = Doctrine::getTable('StackappCategory')->getWithJobs();
   }
 
   public function executeShow(sfWebRequest $request)
   {
-    $this->stackapp_job = Doctrine::getTable('StackappJob')->find(array($request->getParameter('id')));
-    $this->forward404Unless($this->stackapp_job);
+    $this->job = $this->getRoute()->getObject();
   }
 
   public function executeNew(sfWebRequest $request)
