@@ -28,7 +28,51 @@ class StackappJob extends BaseStackappJob
 	    $this->setExpiresAt(date('Y-m-d H:i:s', $now + 86400 * sfConfig::get('app_active_days')));
 	  }
 	 
+	   if (!$this->getToken())
+	  {
+	    $this->setToken(sha1($this->getEmail().rand(11111, 99999)));
+	  }
+
 	  return parent::save($conn);
 	}
 
+	  public function extend($force = false)
+	  {
+	    if (!$force && !$this->expiresSoon())
+	    {
+	      return false;
+	    }
+	 
+	    $this->setExpiresAt(date('Y-m-d', time() + 86400 * sfConfig::get('app_active_days')));
+	    $this->save();
+	 
+	    return true;
+	  }
+
+	public function getTypeName()
+	{
+	  $types = Doctrine::getTable('StackappJob')->getTypes();
+	  return $this->getType() ? $types[$this->getType()] : '';
+	}
+	 
+	public function isExpired()
+	{
+	  return $this->getDaysBeforeExpires() < 0;
+	}
+	 
+	public function expiresSoon()
+	{
+	  return $this->getDaysBeforeExpires() < 5;
+	}
+	 
+	public function getDaysBeforeExpires()
+	{
+	  return floor((strtotime($this->getExpiresAt()) - time()) / 86400);
+	}
+
+	public function publish()
+	{
+	  $this->setIsActivated(true);
+	  $this->save();
+	}
 }

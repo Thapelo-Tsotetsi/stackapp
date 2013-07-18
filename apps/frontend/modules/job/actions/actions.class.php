@@ -22,55 +22,65 @@ class jobActions extends sfActions
 
   public function executeNew(sfWebRequest $request)
   {
-    $this->form = new StackappJobForm();
+    $job = new StackappJob();
+    $job->setType('full-time');
+   
+    $this->form = new StackappJobForm($job);
   }
-
+   
   public function executeCreate(sfWebRequest $request)
   {
-    $this->forward404Unless($request->isMethod('post'));
-
     $this->form = new StackappJobForm();
-
     $this->processForm($request, $this->form);
-
     $this->setTemplate('new');
   }
-
+   
   public function executeEdit(sfWebRequest $request)
   {
-    $this->forward404Unless($stackapp_job = Doctrine::getTable('StackappJob')->find(array($request->getParameter('id'))), sprintf('Object stackapp_job does not exist (%s).', $request->getParameter('id')));
-    $this->form = new StackappJobForm($stackapp_job);
+    $this->form = new StackappJobForm($this->getRoute()->getObject());
   }
-
+   
   public function executeUpdate(sfWebRequest $request)
   {
-    $this->forward404Unless($request->isMethod('post') || $request->isMethod('put'));
-    $this->forward404Unless($stackapp_job = Doctrine::getTable('StackappJob')->find(array($request->getParameter('id'))), sprintf('Object stackapp_job does not exist (%s).', $request->getParameter('id')));
-    $this->form = new StackappJobForm($stackapp_job);
-
+    $this->form = new StackappJobForm($this->getRoute()->getObject());
     $this->processForm($request, $this->form);
-
     $this->setTemplate('edit');
   }
-
+   
   public function executeDelete(sfWebRequest $request)
   {
     $request->checkCSRFProtection();
-
-    $this->forward404Unless($stackapp_job = Doctrine::getTable('StackappJob')->find(array($request->getParameter('id'))), sprintf('Object stackapp_job does not exist (%s).', $request->getParameter('id')));
-    $stackapp_job->delete();
-
+   
+    $job = $this->getRoute()->getObject();
+    $job->delete();
+   
     $this->redirect('job/index');
   }
-
+   
   protected function processForm(sfWebRequest $request, sfForm $form)
   {
-    $form->bind($request->getParameter($form->getName()));
+    $form->bind(
+      $request->getParameter($form->getName()),
+      $request->getFiles($form->getName())
+    );
+   
     if ($form->isValid())
     {
-      $stackapp_job = $form->save();
-
-      $this->redirect('job/edit?id='.$stackapp_job->getId());
+      $job = $form->save();
+   
+      $this->redirect($this->generateUrl('job_show', $job));
     }
+  }
+
+  public function executePublish(sfWebRequest $request)
+  {
+    $request->checkCSRFProtection();
+   
+    $job = $this->getRoute()->getObject();
+    $job->publish();
+   
+    $this->getUser()->setFlash('notice', sprintf('Your job is now online for %s days.', sfConfig::get('app_active_days')));
+   
+    $this->redirect($this->generateUrl('job_show_user', $job));
   }
 }
