@@ -16,6 +16,7 @@ class BaseStackappCategoryForm extends BaseFormDoctrine
       'name'                     => new sfWidgetFormInput(),
       'created_at'               => new sfWidgetFormDateTime(),
       'updated_at'               => new sfWidgetFormDateTime(),
+      'slug'                     => new sfWidgetFormInput(),
       'stackapp_affiliates_list' => new sfWidgetFormDoctrineChoiceMany(array('model' => 'StackappAffiliate')),
     ));
 
@@ -24,11 +25,12 @@ class BaseStackappCategoryForm extends BaseFormDoctrine
       'name'                     => new sfValidatorString(array('max_length' => 255)),
       'created_at'               => new sfValidatorDateTime(array('required' => false)),
       'updated_at'               => new sfValidatorDateTime(array('required' => false)),
+      'slug'                     => new sfValidatorString(array('max_length' => 255, 'required' => false)),
       'stackapp_affiliates_list' => new sfValidatorDoctrineChoiceMany(array('model' => 'StackappAffiliate', 'required' => false)),
     ));
 
     $this->validatorSchema->setPostValidator(
-      new sfValidatorDoctrineUnique(array('model' => 'StackappCategory', 'column' => array('name')))
+      new sfValidatorDoctrineUnique(array('model' => 'StackappCategory', 'column' => array('slug')))
     );
 
     $this->widgetSchema->setNameFormat('stackapp_category[%s]');

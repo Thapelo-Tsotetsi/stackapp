@@ -673,3 +673,288 @@ Jul 17 21:31:02 symfony [info] {sfWebDebugLogger} Action "job/index" 422.40 ms (
 Jul 17 21:31:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.15 ms (10)
 Jul 17 21:31:02 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 182.61 ms (1)
 Jul 17 21:31:02 symfony [info] {sfWebResponse} Send content (45944 o)
+Jul 18 11:35:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show_user" (/job/:company_slug/:location_slug/:id/:position_slug)
+Jul 18 11:35:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job" (/job.:sf_format)
+Jul 18 11:35:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_new" (/job/new.:sf_format)
+Jul 18 11:35:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_create" (/job.:sf_format)
+Jul 18 11:35:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_edit" (/job/:id/edit.:sf_format)
+Jul 18 11:35:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_update" (/job/:id.:sf_format)
+Jul 18 11:35:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_delete" (/job/:id.:sf_format)
+Jul 18 11:35:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show" (/job/:id.:sf_format)
+Jul 18 11:35:08 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 11:35:08 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Jul 18 11:35:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 11:35:09 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 18 11:35:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 11:35:09 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jul 18 11:35:09 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.id AS s2__id, s2.category_id AS s2__category_id, s2.type AS s2__type, s2.company AS s2__company, s2.logo AS s2__logo, s2.url AS s2__url, s2.position AS s2__position, s2.location AS s2__location, s2.description AS s2__description, s2.requirements_one AS s2__requirements_one, s2.requirements_two AS s2__requirements_two, s2.requirements_three AS s2__requirements_three, s2.how_to_apply AS s2__how_to_apply, s2.token AS s2__token, s2.is_public AS s2__is_public, s2.is_activated AS s2__is_activated, s2.email AS s2__email, s2.expires_at AS s2__expires_at, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM stackapp_category s LEFT JOIN stackapp_job s2 ON s.id = s2.category_id WHERE s2.expires_at > ? - (2013-07-18 11:35:09 )
+Jul 18 11:35:10 symfony [info] {sfPHPView} Render "/home/liveprojects/stackapp_v4/apps/frontend/modules/job/templates/indexSuccess.php"
+Jul 18 11:35:10 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.expires_at DESC LIMIT 5 - (1, 2013-07-18 11:35:10 )
+Jul 18 11:35:10 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.expires_at DESC LIMIT 5 - (3, 2013-07-18 11:35:10 )
+Jul 18 11:35:10 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.expires_at DESC LIMIT 5 - (4, 2013-07-18 11:35:10 )
+Jul 18 11:35:10 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.expires_at DESC LIMIT 5 - (5, 2013-07-18 11:35:10 )
+Jul 18 11:35:10 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackapp_v4/apps/frontend/templates/layout.php"
+Jul 18 11:35:10 symfony [info] {sfPHPView} Render "/home/liveprojects/stackapp_v4/apps/frontend/templates/layout.php"
+Jul 18 11:35:10 symfony [info] {main} Get slot "title"
+Jul 18 11:35:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 18 11:35:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 18 11:35:10 symfony [info] {sfWebDebugLogger} Configuration 601.99 ms (9)
+Jul 18 11:35:10 symfony [info] {sfWebDebugLogger} Action "job/index" 1125.04 ms (1)
+Jul 18 11:35:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.13 ms (10)
+Jul 18 11:35:10 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 376.37 ms (1)
+Jul 18 11:35:10 symfony [info] {sfWebResponse} Send content (45538 o)
+Jul 18 13:26:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "category" (/category/:slug)
+Jul 18 13:26:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show_user" (/job/:company_slug/:location_slug/:id/:position_slug)
+Jul 18 13:26:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job" (/job.:sf_format)
+Jul 18 13:26:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_new" (/job/new.:sf_format)
+Jul 18 13:26:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_create" (/job.:sf_format)
+Jul 18 13:26:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_edit" (/job/:id/edit.:sf_format)
+Jul 18 13:26:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_update" (/job/:id.:sf_format)
+Jul 18 13:26:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_delete" (/job/:id.:sf_format)
+Jul 18 13:26:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show" (/job/:id.:sf_format)
+Jul 18 13:26:20 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 13:26:20 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Jul 18 13:26:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 13:26:20 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 18 13:26:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 13:26:20 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jul 18 13:26:20 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s.slug AS s__slug, s2.id AS s2__id, s2.category_id AS s2__category_id, s2.type AS s2__type, s2.company AS s2__company, s2.logo AS s2__logo, s2.url AS s2__url, s2.position AS s2__position, s2.location AS s2__location, s2.description AS s2__description, s2.requirements_one AS s2__requirements_one, s2.requirements_two AS s2__requirements_two, s2.requirements_three AS s2__requirements_three, s2.how_to_apply AS s2__how_to_apply, s2.token AS s2__token, s2.is_public AS s2__is_public, s2.is_activated AS s2__is_activated, s2.email AS s2__email, s2.expires_at AS s2__expires_at, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM stackapp_category s LEFT JOIN stackapp_job s2 ON s.id = s2.category_id WHERE s2.expires_at > ? - (2013-07-18 13:26:20 )
+Jul 18 13:26:20 symfony [info] {sfPHPView} Render "/home/liveprojects/stackapp_v4/apps/frontend/modules/job/templates/indexSuccess.php"
+Jul 18 13:26:21 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.created_at DESC LIMIT 5 - (1, 2013-07-18 13:26:21 )
+Jul 18 13:26:21 symfony [info] {sfDoctrineLogger} executeQuery : SELECT COUNT(*) AS num_results FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? - (1, 2013-07-18 13:26:21 )
+Jul 18 13:26:21 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.created_at DESC LIMIT 5 - (3, 2013-07-18 13:26:21 )
+Jul 18 13:26:21 symfony [info] {sfDoctrineLogger} executeQuery : SELECT COUNT(*) AS num_results FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? - (3, 2013-07-18 13:26:21 )
+Jul 18 13:26:21 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.created_at DESC LIMIT 5 - (4, 2013-07-18 13:26:21 )
+Jul 18 13:26:21 symfony [info] {sfDoctrineLogger} executeQuery : SELECT COUNT(*) AS num_results FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? - (4, 2013-07-18 13:26:21 )
+Jul 18 13:26:21 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.created_at DESC LIMIT 5 - (5, 2013-07-18 13:26:21 )
+Jul 18 13:26:21 symfony [info] {sfDoctrineLogger} executeQuery : SELECT COUNT(*) AS num_results FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? - (5, 2013-07-18 13:26:21 )
+Jul 18 13:26:21 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackapp_v4/apps/frontend/templates/layout.php"
+Jul 18 13:26:21 symfony [info] {sfPHPView} Render "/home/liveprojects/stackapp_v4/apps/frontend/templates/layout.php"
+Jul 18 13:26:21 symfony [info] {main} Get slot "title"
+Jul 18 13:26:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 18 13:26:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 18 13:26:21 symfony [info] {sfWebDebugLogger} Configuration 177.12 ms (10)
+Jul 18 13:26:21 symfony [info] {sfWebDebugLogger} Action "job/index" 371.61 ms (1)
+Jul 18 13:26:21 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.28 ms (18)
+Jul 18 13:26:21 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 565.63 ms (1)
+Jul 18 13:26:21 symfony [info] {sfWebResponse} Send content (47727 o)
+Jul 18 13:26:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "category" (/category/:slug)
+Jul 18 13:26:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show_user" (/job/:company_slug/:location_slug/:id/:position_slug)
+Jul 18 13:26:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job" (/job.:sf_format)
+Jul 18 13:26:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_new" (/job/new.:sf_format)
+Jul 18 13:26:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_create" (/job.:sf_format)
+Jul 18 13:26:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_edit" (/job/:id/edit.:sf_format)
+Jul 18 13:26:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_update" (/job/:id.:sf_format)
+Jul 18 13:26:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_delete" (/job/:id.:sf_format)
+Jul 18 13:26:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show" (/job/:id.:sf_format)
+Jul 18 13:26:33 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 13:26:33 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/bursaries with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'bursaries',)
+Jul 18 13:26:33 symfony [info] {sfFrontWebController} Action "category/show" does not exist
+Jul 18 13:26:33 symfony [err] {sfError404Exception} Action "category/show" does not exist.
+Jul 18 13:26:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jul 18 13:26:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 18 13:29:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "category" (/category/:slug)
+Jul 18 13:29:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show_user" (/job/:company_slug/:location_slug/:id/:position_slug)
+Jul 18 13:29:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job" (/job.:sf_format)
+Jul 18 13:29:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_new" (/job/new.:sf_format)
+Jul 18 13:29:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_create" (/job.:sf_format)
+Jul 18 13:29:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_edit" (/job/:id/edit.:sf_format)
+Jul 18 13:29:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_update" (/job/:id.:sf_format)
+Jul 18 13:29:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_delete" (/job/:id.:sf_format)
+Jul 18 13:29:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show" (/job/:id.:sf_format)
+Jul 18 13:29:00 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 13:29:00 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Jul 18 13:29:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 13:29:00 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 18 13:29:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 13:29:00 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jul 18 13:29:01 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s.slug AS s__slug, s2.id AS s2__id, s2.category_id AS s2__category_id, s2.type AS s2__type, s2.company AS s2__company, s2.logo AS s2__logo, s2.url AS s2__url, s2.position AS s2__position, s2.location AS s2__location, s2.description AS s2__description, s2.requirements_one AS s2__requirements_one, s2.requirements_two AS s2__requirements_two, s2.requirements_three AS s2__requirements_three, s2.how_to_apply AS s2__how_to_apply, s2.token AS s2__token, s2.is_public AS s2__is_public, s2.is_activated AS s2__is_activated, s2.email AS s2__email, s2.expires_at AS s2__expires_at, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM stackapp_category s LEFT JOIN stackapp_job s2 ON s.id = s2.category_id WHERE s2.expires_at > ? - (2013-07-18 13:29:01 )
+Jul 18 13:29:01 symfony [info] {sfPHPView} Render "/home/liveprojects/stackapp_v4/apps/frontend/modules/job/templates/indexSuccess.php"
+Jul 18 13:29:01 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.created_at DESC LIMIT 5 - (1, 2013-07-18 13:29:01 )
+Jul 18 13:29:01 symfony [info] {sfDoctrineLogger} executeQuery : SELECT COUNT(*) AS num_results FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? - (1, 2013-07-18 13:29:01 )
+Jul 18 13:29:01 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.created_at DESC LIMIT 5 - (3, 2013-07-18 13:29:01 )
+Jul 18 13:29:01 symfony [info] {sfDoctrineLogger} executeQuery : SELECT COUNT(*) AS num_results FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? - (3, 2013-07-18 13:29:01 )
+Jul 18 13:29:01 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.created_at DESC LIMIT 5 - (4, 2013-07-18 13:29:01 )
+Jul 18 13:29:01 symfony [info] {sfDoctrineLogger} executeQuery : SELECT COUNT(*) AS num_results FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? - (4, 2013-07-18 13:29:01 )
+Jul 18 13:29:01 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.created_at DESC LIMIT 5 - (5, 2013-07-18 13:29:01 )
+Jul 18 13:29:01 symfony [info] {sfDoctrineLogger} executeQuery : SELECT COUNT(*) AS num_results FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? - (5, 2013-07-18 13:29:01 )
+Jul 18 13:29:01 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackapp_v4/apps/frontend/templates/layout.php"
+Jul 18 13:29:01 symfony [info] {sfPHPView} Render "/home/liveprojects/stackapp_v4/apps/frontend/templates/layout.php"
+Jul 18 13:29:01 symfony [info] {main} Get slot "title"
+Jul 18 13:29:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 18 13:29:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 18 13:29:01 symfony [info] {sfWebDebugLogger} Configuration 5.90 ms (9)
+Jul 18 13:29:01 symfony [info] {sfWebDebugLogger} Action "job/index" 383.76 ms (1)
+Jul 18 13:29:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.28 ms (18)
+Jul 18 13:29:01 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 338.09 ms (1)
+Jul 18 13:29:01 symfony [info] {sfWebResponse} Send content (47953 o)
+Jul 18 13:29:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "category" (/category/:slug)
+Jul 18 13:29:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show_user" (/job/:company_slug/:location_slug/:id/:position_slug)
+Jul 18 13:29:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job" (/job.:sf_format)
+Jul 18 13:29:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_new" (/job/new.:sf_format)
+Jul 18 13:29:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_create" (/job.:sf_format)
+Jul 18 13:29:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_edit" (/job/:id/edit.:sf_format)
+Jul 18 13:29:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_update" (/job/:id.:sf_format)
+Jul 18 13:29:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_delete" (/job/:id.:sf_format)
+Jul 18 13:29:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show" (/job/:id.:sf_format)
+Jul 18 13:29:05 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 13:29:05 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/bursaries with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'bursaries',)
+Jul 18 13:29:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 13:29:05 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 18 13:29:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 13:29:05 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+Jul 18 13:29:05 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s.slug AS s__slug FROM stackapp_category s WHERE s.slug = ? - (bursaries )
+Jul 18 13:29:05 symfony [err] {sfRenderException} The template "showSuccess.php" does not exist or is unreadable in "".
+Jul 18 13:29:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jul 18 13:29:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 18 13:32:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "category" (/category/:slug)
+Jul 18 13:32:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show_user" (/job/:company_slug/:location_slug/:id/:position_slug)
+Jul 18 13:32:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job" (/job.:sf_format)
+Jul 18 13:32:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_new" (/job/new.:sf_format)
+Jul 18 13:32:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_create" (/job.:sf_format)
+Jul 18 13:32:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_edit" (/job/:id/edit.:sf_format)
+Jul 18 13:32:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_update" (/job/:id.:sf_format)
+Jul 18 13:32:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_delete" (/job/:id.:sf_format)
+Jul 18 13:32:40 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show" (/job/:id.:sf_format)
+Jul 18 13:32:40 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 13:32:40 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Jul 18 13:32:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 13:32:40 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 18 13:32:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 13:32:40 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jul 18 13:32:40 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s.slug AS s__slug, s2.id AS s2__id, s2.category_id AS s2__category_id, s2.type AS s2__type, s2.company AS s2__company, s2.logo AS s2__logo, s2.url AS s2__url, s2.position AS s2__position, s2.location AS s2__location, s2.description AS s2__description, s2.requirements_one AS s2__requirements_one, s2.requirements_two AS s2__requirements_two, s2.requirements_three AS s2__requirements_three, s2.how_to_apply AS s2__how_to_apply, s2.token AS s2__token, s2.is_public AS s2__is_public, s2.is_activated AS s2__is_activated, s2.email AS s2__email, s2.expires_at AS s2__expires_at, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM stackapp_category s LEFT JOIN stackapp_job s2 ON s.id = s2.category_id WHERE s2.expires_at > ? - (2013-07-18 13:32:40 )
+Jul 18 13:32:40 symfony [info] {sfPHPView} Render "/home/liveprojects/stackapp_v4/apps/frontend/modules/job/templates/indexSuccess.php"
+Jul 18 13:32:40 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.created_at DESC LIMIT 5 - (1, 2013-07-18 13:32:40 )
+Jul 18 13:32:40 symfony [info] {sfDoctrineLogger} executeQuery : SELECT COUNT(*) AS num_results FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? - (1, 2013-07-18 13:32:40 )
+Jul 18 13:32:40 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.created_at DESC LIMIT 5 - (3, 2013-07-18 13:32:40 )
+Jul 18 13:32:40 symfony [info] {sfDoctrineLogger} executeQuery : SELECT COUNT(*) AS num_results FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? - (3, 2013-07-18 13:32:40 )
+Jul 18 13:32:40 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.created_at DESC LIMIT 5 - (4, 2013-07-18 13:32:40 )
+Jul 18 13:32:40 symfony [info] {sfDoctrineLogger} executeQuery : SELECT COUNT(*) AS num_results FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? - (4, 2013-07-18 13:32:40 )
+Jul 18 13:32:41 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.created_at DESC LIMIT 5 - (5, 2013-07-18 13:32:41 )
+Jul 18 13:32:41 symfony [info] {sfDoctrineLogger} executeQuery : SELECT COUNT(*) AS num_results FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? - (5, 2013-07-18 13:32:41 )
+Jul 18 13:32:41 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackapp_v4/apps/frontend/templates/layout.php"
+Jul 18 13:32:41 symfony [info] {sfPHPView} Render "/home/liveprojects/stackapp_v4/apps/frontend/templates/layout.php"
+Jul 18 13:32:41 symfony [info] {main} Get slot "title"
+Jul 18 13:32:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 18 13:32:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 18 13:32:41 symfony [info] {sfWebDebugLogger} Configuration 5.48 ms (9)
+Jul 18 13:32:41 symfony [info] {sfWebDebugLogger} Action "job/index" 394.00 ms (1)
+Jul 18 13:32:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.34 ms (18)
+Jul 18 13:32:41 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 523.21 ms (1)
+Jul 18 13:32:41 symfony [info] {sfWebResponse} Send content (47955 o)
+Jul 18 13:32:47 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "category" (/category/:slug)
+Jul 18 13:32:47 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show_user" (/job/:company_slug/:location_slug/:id/:position_slug)
+Jul 18 13:32:47 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job" (/job.:sf_format)
+Jul 18 13:32:47 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_new" (/job/new.:sf_format)
+Jul 18 13:32:47 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_create" (/job.:sf_format)
+Jul 18 13:32:47 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_edit" (/job/:id/edit.:sf_format)
+Jul 18 13:32:47 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_update" (/job/:id.:sf_format)
+Jul 18 13:32:47 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_delete" (/job/:id.:sf_format)
+Jul 18 13:32:47 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show" (/job/:id.:sf_format)
+Jul 18 13:32:47 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 13:32:47 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/bursaries with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'bursaries',)
+Jul 18 13:32:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 13:32:47 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 18 13:32:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 13:32:47 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+Jul 18 13:32:47 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s.slug AS s__slug FROM stackapp_category s WHERE s.slug = ? - (bursaries )
+Jul 18 13:32:47 symfony [info] {sfPHPView} Render "/home/liveprojects/stackapp_v4/apps/frontend/modules/category/templates/showSuccess.php"
+Jul 18 13:32:47 symfony [info] {main} Set slot "title"
+Jul 18 13:32:47 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.created_at DESC LIMIT 10 - (4, 2013-07-18 13:32:47 )
+Jul 18 13:32:47 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackapp_v4/apps/frontend/templates/layout.php"
+Jul 18 13:32:47 symfony [info] {sfPHPView} Render "/home/liveprojects/stackapp_v4/apps/frontend/templates/layout.php"
+Jul 18 13:32:47 symfony [info] {main} Get slot "title"
+Jul 18 13:32:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 18 13:32:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 18 13:32:47 symfony [info] {sfWebDebugLogger} Configuration 5.55 ms (9)
+Jul 18 13:32:47 symfony [info] {sfWebDebugLogger} Action "category/show" 160.32 ms (1)
+Jul 18 13:32:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.07 ms (4)
+Jul 18 13:32:47 symfony [info] {sfWebDebugLogger} View "Success" for "category/show" 188.22 ms (1)
+Jul 18 13:32:47 symfony [info] {sfWebResponse} Send content (35507 o)
+Jul 18 13:33:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "category" (/category/:slug)
+Jul 18 13:33:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show_user" (/job/:company_slug/:location_slug/:id/:position_slug)
+Jul 18 13:33:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job" (/job.:sf_format)
+Jul 18 13:33:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_new" (/job/new.:sf_format)
+Jul 18 13:33:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_create" (/job.:sf_format)
+Jul 18 13:33:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_edit" (/job/:id/edit.:sf_format)
+Jul 18 13:33:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_update" (/job/:id.:sf_format)
+Jul 18 13:33:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_delete" (/job/:id.:sf_format)
+Jul 18 13:33:05 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show" (/job/:id.:sf_format)
+Jul 18 13:33:05 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 13:33:05 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/internships with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'internships',)
+Jul 18 13:33:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 13:33:05 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 18 13:33:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 13:33:05 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+Jul 18 13:33:05 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s.slug AS s__slug FROM stackapp_category s WHERE s.slug = ? - (internships )
+Jul 18 13:33:05 symfony [info] {sfPHPView} Render "/home/liveprojects/stackapp_v4/apps/frontend/modules/category/templates/showSuccess.php"
+Jul 18 13:33:06 symfony [info] {main} Set slot "title"
+Jul 18 13:33:06 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.created_at DESC LIMIT 10 - (1, 2013-07-18 13:33:06 )
+Jul 18 13:33:06 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackapp_v4/apps/frontend/templates/layout.php"
+Jul 18 13:33:06 symfony [info] {sfPHPView} Render "/home/liveprojects/stackapp_v4/apps/frontend/templates/layout.php"
+Jul 18 13:33:06 symfony [info] {main} Get slot "title"
+Jul 18 13:33:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 18 13:33:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 18 13:33:06 symfony [info] {sfWebDebugLogger} Configuration 6.43 ms (9)
+Jul 18 13:33:06 symfony [info] {sfWebDebugLogger} Action "category/show" 182.65 ms (1)
+Jul 18 13:33:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.07 ms (4)
+Jul 18 13:33:06 symfony [info] {sfWebDebugLogger} View "Success" for "category/show" 118.81 ms (1)
+Jul 18 13:33:06 symfony [info] {sfWebResponse} Send content (33494 o)
+Jul 18 13:33:14 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "category" (/category/:slug)
+Jul 18 13:33:14 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show_user" (/job/:company_slug/:location_slug/:id/:position_slug)
+Jul 18 13:33:14 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job" (/job.:sf_format)
+Jul 18 13:33:14 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_new" (/job/new.:sf_format)
+Jul 18 13:33:14 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_create" (/job.:sf_format)
+Jul 18 13:33:14 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_edit" (/job/:id/edit.:sf_format)
+Jul 18 13:33:14 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_update" (/job/:id.:sf_format)
+Jul 18 13:33:14 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_delete" (/job/:id.:sf_format)
+Jul 18 13:33:14 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show" (/job/:id.:sf_format)
+Jul 18 13:33:14 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 13:33:14 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/learnerships with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'learnerships',)
+Jul 18 13:33:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 13:33:14 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 18 13:33:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 13:33:14 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+Jul 18 13:33:14 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s.slug AS s__slug FROM stackapp_category s WHERE s.slug = ? - (learnerships )
+Jul 18 13:33:14 symfony [info] {sfPHPView} Render "/home/liveprojects/stackapp_v4/apps/frontend/modules/category/templates/showSuccess.php"
+Jul 18 13:33:14 symfony [info] {main} Set slot "title"
+Jul 18 13:33:14 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.created_at DESC LIMIT 10 - (3, 2013-07-18 13:33:14 )
+Jul 18 13:33:14 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackapp_v4/apps/frontend/templates/layout.php"
+Jul 18 13:33:14 symfony [info] {sfPHPView} Render "/home/liveprojects/stackapp_v4/apps/frontend/templates/layout.php"
+Jul 18 13:33:14 symfony [info] {main} Get slot "title"
+Jul 18 13:33:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 18 13:33:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 18 13:33:14 symfony [info] {sfWebDebugLogger} Configuration 5.52 ms (9)
+Jul 18 13:33:14 symfony [info] {sfWebDebugLogger} Action "category/show" 188.07 ms (1)
+Jul 18 13:33:14 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.06 ms (4)
+Jul 18 13:33:14 symfony [info] {sfWebDebugLogger} View "Success" for "category/show" 131.25 ms (1)
+Jul 18 13:33:14 symfony [info] {sfWebResponse} Send content (33797 o)
+Jul 18 13:33:58 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "category" (/category/:slug)
+Jul 18 13:33:58 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show_user" (/job/:company_slug/:location_slug/:id/:position_slug)
+Jul 18 13:33:58 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job" (/job.:sf_format)
+Jul 18 13:33:59 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_new" (/job/new.:sf_format)
+Jul 18 13:33:59 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_create" (/job.:sf_format)
+Jul 18 13:33:59 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_edit" (/job/:id/edit.:sf_format)
+Jul 18 13:33:59 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_update" (/job/:id.:sf_format)
+Jul 18 13:33:59 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_delete" (/job/:id.:sf_format)
+Jul 18 13:33:59 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "job_show" (/job/:id.:sf_format)
+Jul 18 13:33:59 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 18 13:33:59 symfony [info] {sfPatternRouting} Match route "category" (/category/:slug) for /category/start-up-jobs with parameters array (  'module' => 'category',  'action' => 'show',  'slug' => 'start-up-jobs',)
+Jul 18 13:33:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 18 13:33:59 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 18 13:33:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 18 13:33:59 symfony [info] {categoryActions} Call "categoryActions->executeShow()"
+Jul 18 13:33:59 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.name AS s__name, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s.slug AS s__slug FROM stackapp_category s WHERE s.slug = ? - (start-up-jobs )
+Jul 18 13:33:59 symfony [info] {sfPHPView} Render "/home/liveprojects/stackapp_v4/apps/frontend/modules/category/templates/showSuccess.php"
+Jul 18 13:33:59 symfony [info] {main} Set slot "title"
+Jul 18 13:33:59 symfony [info] {sfDoctrineLogger} executeQuery : SELECT s.id AS s__id, s.category_id AS s__category_id, s.type AS s__type, s.company AS s__company, s.logo AS s__logo, s.url AS s__url, s.position AS s__position, s.location AS s__location, s.description AS s__description, s.requirements_one AS s__requirements_one, s.requirements_two AS s__requirements_two, s.requirements_three AS s__requirements_three, s.how_to_apply AS s__how_to_apply, s.token AS s__token, s.is_public AS s__is_public, s.is_activated AS s__is_activated, s.email AS s__email, s.expires_at AS s__expires_at, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM stackapp_job s WHERE s.category_id = ? AND s.expires_at > ? ORDER BY s.created_at DESC LIMIT 10 - (5, 2013-07-18 13:33:59 )
+Jul 18 13:33:59 symfony [info] {sfPHPView} Decorate content with "/home/liveprojects/stackapp_v4/apps/frontend/templates/layout.php"
+Jul 18 13:33:59 symfony [info] {sfPHPView} Render "/home/liveprojects/stackapp_v4/apps/frontend/templates/layout.php"
+Jul 18 13:33:59 symfony [info] {main} Get slot "title"
+Jul 18 13:33:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 18 13:33:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 18 13:33:59 symfony [info] {sfWebDebugLogger} Configuration 6.10 ms (9)
+Jul 18 13:33:59 symfony [info] {sfWebDebugLogger} Action "category/show" 157.91 ms (1)
+Jul 18 13:33:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.07 ms (4)
+Jul 18 13:33:59 symfony [info] {sfWebDebugLogger} View "Success" for "category/show" 113.77 ms (1)
+Jul 18 13:33:59 symfony [info] {sfWebResponse} Send content (33812 o)

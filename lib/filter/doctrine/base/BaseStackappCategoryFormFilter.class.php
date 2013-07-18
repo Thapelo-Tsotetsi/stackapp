@@ -17,6 +17,7 @@ class BaseStackappCategoryFormFilter extends BaseFormFilterDoctrine
       'name'                     => new sfWidgetFormFilterInput(),
       'created_at'               => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => true)),
       'updated_at'               => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => true)),
+      'slug'                     => new sfWidgetFormFilterInput(),
       'stackapp_affiliates_list' => new sfWidgetFormDoctrineChoiceMany(array('model' => 'StackappAffiliate')),
     ));
 
@@ -24,6 +25,7 @@ class BaseStackappCategoryFormFilter extends BaseFormFilterDoctrine
       'name'                     => new sfValidatorPass(array('required' => false)),
       'created_at'               => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDate(array('required' => false)))),
       'updated_at'               => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDate(array('required' => false)))),
+      'slug'                     => new sfValidatorPass(array('required' => false)),
       'stackapp_affiliates_list' => new sfValidatorDoctrineChoiceMany(array('model' => 'StackappAffiliate', 'required' => false)),
     ));
 
@@ -62,6 +64,7 @@ class BaseStackappCategoryFormFilter extends BaseFormFilterDoctrine
       'name'                     => 'Text',
       'created_at'               => 'Date',
       'updated_at'               => 'Date',
+      'slug'                     => 'Text',
       'stackapp_affiliates_list' => 'ManyKey',
     );
   }

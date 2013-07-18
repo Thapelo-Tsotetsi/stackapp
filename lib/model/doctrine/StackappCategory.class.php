@@ -14,4 +14,13 @@ class StackappCategory extends BaseStackappCategory
 	 
 	  return Doctrine::getTable('StackappJob')->getActiveJobs($q);
 	}
+
+	public function countActiveJobs()
+	{
+	  $q = Doctrine_Query::create()
+	    ->from('StackappJob j')
+	    ->where('j.category_id = ?', $this->getId());
+	 
+	  return Doctrine::getTable('StackappJob')->countActiveJobs($q);
+	}
 }
