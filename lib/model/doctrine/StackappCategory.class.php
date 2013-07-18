@@ -7,20 +7,23 @@ class StackappCategory extends BaseStackappCategory
 {
 	public function getActiveJobs($max = 10)
 	{
-	  $q = Doctrine_Query::create()
-	    ->from('StackappJob j')
-	    ->where('j.category_id = ?', $this->getId())
+	  $q = $this->getActiveJobsQuery()
 	    ->limit($max);
 	 
-	  return Doctrine::getTable('StackappJob')->getActiveJobs($q);
+	  return $q->execute();
+	}
+	 
+	public function countActiveJobs()
+	{
+	  return $this->getActiveJobsQuery()->count();
 	}
 
-	public function countActiveJobs()
+	public function getActiveJobsQuery()
 	{
 	  $q = Doctrine_Query::create()
 	    ->from('StackappJob j')
 	    ->where('j.category_id = ?', $this->getId());
 	 
-	  return Doctrine::getTable('StackappJob')->countActiveJobs($q);
+	  return Doctrine::getTable('StackappJob')->addActiveJobsQuery($q);
 	}
 }
