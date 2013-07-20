@@ -11,11 +11,7 @@ class StackappJobForm extends BaseStackappJobForm
 {
   public function configure()
   {
-    unset(
-      $this['created_at'], $this['updated_at'],
-      $this['expires_at'], $this['is_activated'],
-      $this['token']
-    );
+    $this->removeFields();
  
     $this->validatorSchema['email'] = new sfValidatorAnd(array(
       $this->validatorSchema['email'],
@@ -47,5 +43,14 @@ class StackappJobForm extends BaseStackappJobForm
     ));
  
     $this->widgetSchema->setHelp('is_public', 'Whether the job can also be published on affiliate websites or not.');
+  }
+
+    protected function removeFields()
+  {
+    unset(
+      $this['created_at'], $this['updated_at'],
+      $this['expires_at'], $this['is_activated'],
+      $this['token']
+    );
   }
 }

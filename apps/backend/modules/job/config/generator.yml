@@ -13,7 +13,7 @@ generator:
     config:
       actions: ~
       fields:
-        is_activated: { label: Activated?, help: Whether the user has activated the job, or not }
+        is_activated: { label: Activated?, help: Whethe the user has activated the job, or not }
         is_public:    { label: Public? }
       list:
         title:         Job Management
@@ -39,7 +39,7 @@ generator:
       form:
         class:     BackendStackappJobForm
         display:
-          Content: [category_id, type, company, logo, url, position, location, description, how_to_apply, is_public, email]
+          Content: [category_id, type, company, logo, url, position, location, description,requirements_one, requirements_two, requirements_three, how_to_apply, is_public, email]
           Admin:   [_generated_token, is_activated, expires_at]
       edit:
         title: Editing Job "%%company%% is looking for a %%position%%"

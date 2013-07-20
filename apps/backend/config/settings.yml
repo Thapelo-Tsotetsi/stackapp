@@ -21,6 +21,7 @@ test:
 
 all:
   .settings:
+    enabled_modules:  [default, sfGuardAuth, sfGuardUser]
     # Form security secret (CSRF protection)
     csrf_secret:       UniqueSecret1     # Unique secret to enable CSRF protection or false to disable
 
@@ -30,7 +31,9 @@ all:
 
     # Cache settings
     lazy_cache_key:         on        # Delays creation of a cache key until after checking whether an action or partial is cacheable
-
+  .actions:
+    login_module:    sfGuardAuth
+    login_action:    signin
 #all:
 #  .actions:
 #    error_404_module:       default   # To be called when a 404 error is raised
