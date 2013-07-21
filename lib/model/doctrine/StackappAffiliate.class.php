@@ -6,4 +6,29 @@
 class StackappAffiliate extends BaseStackappAffiliate
 {
 
+
+  public function preValidate($event)
+  {
+    $object = $event->getInvoker();
+ 
+    if (!$object->getToken())
+    {
+      $object->setToken(sha1($object->getEmail().rand(11111, 99999)));
+    }
+  }
+
+  public function activate()
+  {
+    $this->setIsActive(true);
+ 
+    return $this->save();
+  }
+ 
+  public function deactivate()
+  {
+    $this->setIsActive(false);
+ 
+    return $this->save();
+  }
+
 }

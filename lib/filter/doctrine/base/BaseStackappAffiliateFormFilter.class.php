@@ -14,7 +14,6 @@ class BaseStackappAffiliateFormFilter extends BaseFormFilterDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'url'                      => new sfWidgetFormFilterInput(),
       'email'                    => new sfWidgetFormFilterInput(),
       'token'                    => new sfWidgetFormFilterInput(),
       'is_active'                => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
@@ -24,7 +23,6 @@ class BaseStackappAffiliateFormFilter extends BaseFormFilterDoctrine
     ));
 
     $this->setValidators(array(
-      'url'                      => new sfValidatorPass(array('required' => false)),
       'email'                    => new sfValidatorPass(array('required' => false)),
       'token'                    => new sfValidatorPass(array('required' => false)),
       'is_active'                => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
@@ -65,7 +63,6 @@ class BaseStackappAffiliateFormFilter extends BaseFormFilterDoctrine
   {
     return array(
       'id'                       => 'Number',
-      'url'                      => 'Text',
       'email'                    => 'Text',
       'token'                    => 'Text',
       'is_active'                => 'Boolean',

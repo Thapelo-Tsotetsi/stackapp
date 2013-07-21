@@ -25,6 +25,17 @@ job:
   requirements:
     token: \w+
 
+job_search:
+  url:   /search
+  param: { module: job, action: search }
+
+update:
+  class:   sfDoctrineRouteCollection
+  options:
+    model: StackappAffiliate
+    actions: [new, create]
+    object_actions: { wait: get }
+
 # default rules
 homepage:
   url:   /

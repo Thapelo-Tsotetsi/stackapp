@@ -1,3 +1,12 @@
+stackapp_affiliate_update:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                StackappAffiliate
+    module:               update
+    prefix_path:          update
+    column:               id
+    with_wildcard_routes: true
+
 stackapp_category_category:
   class: sfDoctrineRouteCollection
   options:

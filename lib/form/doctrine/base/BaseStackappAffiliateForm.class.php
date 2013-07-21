@@ -13,7 +13,6 @@ class BaseStackappAffiliateForm extends BaseFormDoctrine
   {
     $this->setWidgets(array(
       'id'                       => new sfWidgetFormInputHidden(),
-      'url'                      => new sfWidgetFormInput(),
       'email'                    => new sfWidgetFormInput(),
       'token'                    => new sfWidgetFormInput(),
       'is_active'                => new sfWidgetFormInputCheckbox(),
@@ -24,7 +23,6 @@ class BaseStackappAffiliateForm extends BaseFormDoctrine
 
     $this->setValidators(array(
       'id'                       => new sfValidatorDoctrineChoice(array('model' => 'StackappAffiliate', 'column' => 'id', 'required' => false)),
-      'url'                      => new sfValidatorString(array('max_length' => 255)),
       'email'                    => new sfValidatorString(array('max_length' => 255)),
       'token'                    => new sfValidatorString(array('max_length' => 255)),
       'is_active'                => new sfValidatorBoolean(),

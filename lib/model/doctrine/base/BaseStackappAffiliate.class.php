@@ -8,11 +8,6 @@ abstract class BaseStackappAffiliate extends sfDoctrineRecord
     public function setTableDefinition()
     {
         $this->setTableName('stackapp_affiliate');
-        $this->hasColumn('url', 'string', 255, array(
-             'type' => 'string',
-             'notnull' => true,
-             'length' => '255',
-             ));
         $this->hasColumn('email', 'string', 255, array(
              'type' => 'string',
              'notnull' => true,

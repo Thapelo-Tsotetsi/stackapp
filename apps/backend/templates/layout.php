@@ -23,6 +23,8 @@
         <ul>
           <li><?php echo link_to('Users', '@sf_guard_user') ?></li>
           <li><?php echo link_to('Jobs', '@stackapp_job_job') ?></li>
+          <li><a href="<?php echo url_for('@stackapp_affiliate_update') ?>">
+    Updates - <strong><?php echo Doctrine::getTable('StackappAffiliate')->countToBeActivated() ?></strong></a></li>
           <li><?php echo link_to('Categories', '@stackapp_category_category') ?></li>
           <li><?php echo link_to('Logout', '@sf_guard_signout') ?></li>
         </ul>

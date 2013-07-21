@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           StackappAffiliate
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          stackapp_affiliate_update
+    with_doctrine_route:     1
+
+    config:
+      fields:
+        is_active: { label: Active? }
+      list:
+        title:   Updates Management
+        display: [is_active, email, token]
+        sort:    [is_active]
+        object_actions:
+          activate:   ~
+          deactivate: ~
+        batch_actions:
+          activate:   ~
+          deactivate: ~
+        actions: {}
+      filter:
+        display: [email, is_active]

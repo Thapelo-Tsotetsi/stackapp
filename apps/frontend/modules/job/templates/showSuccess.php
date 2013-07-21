@@ -10,7 +10,7 @@
   <?php include_partial('job/admin', array('job' => $job)) ?>
 <?php endif; ?>
 
-<div id="job">
+  <div id="job">
   <h1><?php echo $job->getCompany() ?></h1>
   <h2><?php echo $job->getLocation() ?></h2>
   <h3>
