@@ -17,18 +17,11 @@
         <div class="content">
 			<h1>
 			  <a href="<?php echo url_for('@homepage') ?>">
-			    <img src="/images/logo.jpg" alt="S Job Board" />
+			    <img src="/images/sy" alt="Stackapp Job Board" />
 			  </a>
 			</h1>
  
           <div id="sub_header">
-            <div class="post">
-              <h2>Ask for people</h2>
-              <div>
-               <a href="<?php echo url_for('@job_new') ?>">Post a Job</a>
-              </div>
-            </div>
- 
             <div class="search">
             <h2>Ask for a job</h2>
             <form action="<?php echo url_for('@job_search') ?>" method="get">
@@ -76,13 +69,13 @@
       <div id="footer">
         <div class="content">
           <span class="symfony">
-            <img src="/images/jobeet-mini.png" />
+            <img src="/images/stackapp-mini.png" />
             powered by <a href="/">
             <img src="/images/symfony.gif" alt="symfony framework" />
             </a>
           </span>
           <ul>
-            <li><a href="">About Stackapp</a></li>
+            <li><a href="/about.html">About Stackapp</a></li>
             <li class="last"><a href="<?php echo url_for('@update_new') ?>">Receive Updates</a></li>
           </ul>
         </div>
