@@ -12,5 +12,5 @@ The app was launched on the 7th of May 2013 and is entirely based on Symfony 1.4
 The aplication is live here: www.stackapp.co.za
 To do features(Must have)
 
-#CV and document editing and management using https://github.com/coolwanglu/pdf2htmlEX and https://github.com/buu700/html-resume
-#Create more templates inspired by latextemplates.com
+-CV and document editing and management using https://github.com/coolwanglu/pdf2htmlEX and https://github.com/buu700/html-resume
+-Create more templates inspired by latextemplates.com
